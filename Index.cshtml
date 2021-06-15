@@ -1,0 +1,50 @@
+﻿@model IEnumerable<DemoApp1.Models.Employee>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<table border="1">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Gender</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var emp in Model)
+        {
+            <tr>
+                <td>@emp.Id</td>
+                <td>@emp.Name</td>
+                <td>@emp.Gender</td>
+            </tr>
+        }
+    </tbody>
+</table>
+@*<h3>Hello from Employee controlled  Index action method</h3>
+    @{
+        var emp = ViewData["name"] as DemoApp1.Models.Employee;
+        var emp1 = ViewBag.empname;
+    }
+
+    <ul>
+        <li> @emp.Id</li>
+        <li>@emp.Name</li>
+        <li>@emp.Gender</li>
+    </ul>
+
+    <h2>  Employee Details Using ViewBag</h2>
+    <ul>
+        <li> @emp1.Id1</li>
+        <li>@emp1.Name</li>
+        <li>@emp1.Gender</li>
+    </ul>*@
+
+@*<h2> Employee details using Strongly typed view</h2>
+    <ul>
+        <li> @Model.Id</li>
+        <li> @Model.Name</li>
+        <li>@Model.Gender</li>
+    </ul>*@
